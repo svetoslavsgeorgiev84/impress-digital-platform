@@ -6,6 +6,8 @@ import Capabilities from "./sections/Capabilities/Capabilities";
 import Solutions from "./sections/Solutions/Solutions";
 import BackToTop from "./components/ui/BackToTop/BackToTop";
 import Gallery from "./sections/Gallery/Gallery";
+import Contact from "./sections/Contact/Contact";
+import Footer from "./components/layout/Footer/Footer";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       <Solutions />
       <Capabilities />
       <Gallery />
+      <Contact />
       <BackToTop />
+      <Footer />
     </MainLayout>
   );
 }
