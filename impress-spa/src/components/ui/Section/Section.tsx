@@ -1,10 +1,14 @@
 type SectionProps = {
   children: React.ReactNode;
+  className?: string;
 };
 
-function Section({ children }: SectionProps) {
+function Section({
+  children,
+  className = "",
+}: SectionProps) {
   return (
-    <section className="py-16 lg:py-24">
+    <section className={`py-12 lg:py-16 ${className}`}>
       {children}
     </section>
   );
