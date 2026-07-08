@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "./styles/theme.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 [id] {
-    scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
