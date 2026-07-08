@@ -5,6 +5,7 @@ import heroImage from "../../assets/images/hero.jpg";
 function Hero() {
     return (
         <section
+            id="company"
             className="relative min-h-screen overflow-hidden"
             style={{
                 backgroundImage: `url(${heroImage})`,

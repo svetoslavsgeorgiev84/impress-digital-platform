@@ -22,7 +22,7 @@ function WhyImpress() {
     ];
 
     return (
-        <Section>
+        <Section id="why-impress">
             <Container>
                 <div className="text-center">
                     <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">

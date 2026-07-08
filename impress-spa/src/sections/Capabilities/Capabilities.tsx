@@ -13,7 +13,7 @@ function Capabilities() {
     ];
 
     return (
-        <Section>
+        <Section id="production">
             <Container>
                 <div className="grid gap-20 lg:grid-cols-[1.2fr_1fr] lg:items-center">
                     <div>

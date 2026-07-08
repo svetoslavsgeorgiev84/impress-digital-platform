@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @import "./styles/theme.css";
+
+[id] {
+    scroll-margin-top: 100px;
+}
