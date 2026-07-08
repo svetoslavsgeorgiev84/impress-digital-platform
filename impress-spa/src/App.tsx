@@ -1,8 +1,13 @@
+import MainLayout from "./layouts/MainLayout";
+import Navbar from "./components/layout/Navbar/Navbar";
+import Hero from "./sections/Hero/Hero";
+
 function App() {
   return (
-    <>
-      <h1>Impress Digital Platform</h1>
-    </>
+    <MainLayout>
+      <Navbar />
+      <Hero />
+    </MainLayout>
   );
 }
 
