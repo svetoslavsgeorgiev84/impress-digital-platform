@@ -5,6 +5,7 @@ import WhyImpress from "./sections/WhyImpress/WhyImpress";
 import Capabilities from "./sections/Capabilities/Capabilities";
 import Solutions from "./sections/Solutions/Solutions";
 import BackToTop from "./components/ui/BackToTop/BackToTop";
+import Gallery from "./sections/Gallery/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <WhyImpress />
       <Solutions />
       <Capabilities />
+      <Gallery />
       <BackToTop />
     </MainLayout>
   );
