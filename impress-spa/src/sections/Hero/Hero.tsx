@@ -32,31 +32,6 @@ function Hero() {
                             Premium packaging and display solutions manufactured in Bulgaria and delivered across Europe.
                         </p>
 
-                        {/* <div className="mt-10 flex flex-wrap gap-4">
-                            <Button> 
-                                Request a Quote 
-                            </Button>
-
-                            <button
-                                className="
-                  rounded-xl
-                  border
-                  border-white/30
-                  px-6
-                    py-3
-                    text-base
-                    font-medium
-                    sm:text-lg
-                  text-white
-                  backdrop-blur-sm
-                  transition-all
-                  duration-200
-                  hover:bg-white/10
-                "
-                            >
-                                View Portfolio
-                            </button>
-                        </div> */}
                     </div>
                 </Container>
             </div>
