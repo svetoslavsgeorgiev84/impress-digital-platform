@@ -1,5 +1,4 @@
 import Container from "../../components/ui/Container/Container";
-import Button from "../../components/ui/Button/Button";
 import heroImage from "../../assets/images/hero.jpg";
 
 function Hero() {
