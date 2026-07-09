@@ -6,16 +6,20 @@ function Button({ children }: ButtonProps) {
   return (
     <button
       className="
-        rounded-xl
+         rounded-xl
         bg-blue-700
-        px-6
-        py-3
+        px-7
+        py-4
+        text-base
         font-medium
         text-white
         transition-all
         duration-200
         hover:bg-blue-800
         hover:scale-105
+        md:px-6
+        md:py-3
+        md:text-lg
       "
     >
       {children}

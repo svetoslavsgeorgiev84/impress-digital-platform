@@ -21,25 +21,27 @@ function Capabilities() {
                             src={productionImage}
                             alt="Impress production"
                             className="
-                            h-[450px]
+                            h-[280px]
                             w-full
                             rounded-3xl
                             object-cover
                             shadow-2xl
+                            sm:h-[350px]
+                            lg:h-[450px]
                         "
                         />
                     </div>
 
                     <div>
-                        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">
+                        <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
                             Production Capabilities
                         </p>
 
-                        <h2 className="mt-4 text-4xl font-bold text-slate-900">
+                        <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
                             Comprehensive Production Capabilities
                         </h2>
 
-                        <p className="mt-6 text-lg text-slate-600">
+                        <p className="mt-6 text-xl leading-8 text-slate-600 md:text-lg">
                             From concept and prepress to premium finishing and delivery,
                             Impress provides complete packaging and display solutions.
                         </p>
@@ -49,26 +51,28 @@ function Capabilities() {
                                 <div
                                     key={item}
                                     className="
-                                                flex
-                                                items-center
-                                                gap-4
-                                                rounded-xl
-                                                border
-                                                border-slate-200
-                                                p-4
-                                                transition-all
-                                                duration-300
-                                                hover:border-blue-200
-                                                hover:translate-x-2
-                                                hover:shadow-md
-                                            "
-                                >
-                                    <div className="text-blue-700 text-xl" />
-
-                                    <span className="text-lg text-slate-700">
-                                        ✓ {item}
+                                    flex
+                                    items-center
+                                    gap-4
+                                    rounded-xl
+                                    border
+                                    border-slate-200
+                                    p-5
+                                    transition-all
+                                    duration-300
+                                    hover:border-blue-200
+                                    hover:translate-x-2
+                                    hover:shadow-md
+                                    "
+                                    >
+                                    <span className="text-2xl text-blue-700">
+                                    ✓
                                     </span>
-                                </div>
+
+                                    <span className="text-xl text-slate-700 md:text-lg">
+                                    {item}
+                                    </span>
+                                    </div>
                             ))}
                         </div>
                     </div>

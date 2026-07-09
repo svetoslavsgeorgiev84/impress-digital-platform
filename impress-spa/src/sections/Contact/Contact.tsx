@@ -10,15 +10,15 @@ function Contact() {
     <Section id="contact">
       <Container>
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">
+          <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
             Contact
           </p>
 
-          <h2 className="mt-4 text-4xl font-bold text-slate-900">
+          <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
             Get in Touch
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
+          <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-slate-600 md:text-lg">
             We would be happy to discuss your next packaging
             and display project.
           </p>
@@ -30,23 +30,25 @@ function Contact() {
               src={officeImage}
               alt="Impress office"
               className="
-                h-[420px]
-                w-full
-                rounded-3xl
-                object-cover
-                shadow-2xl
+               h-[280px]
+              w-full
+              rounded-3xl
+              object-cover
+              shadow-2xl
+              sm:h-[360px]
+              lg:h-[420px]
               "
             />
           </div>
 
-          <div className="rounded-3xl bg-slate-50 p-10">
-            <h3 className="text-2xl font-bold text-slate-900">
+          <div className="rounded-3xl bg-slate-50 p-8 md:p-10">
+            <h3 className="text-3xl font-bold text-slate-900 md:text-2xl">
               Central Office
             </h3>
 
-            <div className="mt-8 space-y-6 text-slate-600">
+            <div className="mt-8 space-y-6 text-lg text-slate-600 md:text-base">
               <div>
-                <p className="font-semibold text-slate-900">
+                <p className="text-lg font-semibold text-slate-900 md:text-base">
                   Address
                 </p>
 
@@ -86,9 +88,12 @@ function Contact() {
                 inline-flex
                 rounded-xl
                 bg-blue-700
-                px-6
-                py-3
+                px-7
+                py-4
+                text-base
                 font-medium
+                md:px-6
+                md:py-3
                 text-white
                 transition-all
                 duration-300
@@ -109,11 +114,11 @@ function Contact() {
             p-8
           "
         >
-          <h3 className="text-2xl font-bold text-slate-900">
+          <h3 className="text-3xl font-bold text-slate-900 md:text-2xl">
             Production Facility
           </h3>
 
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-lg leading-8 text-slate-600 md:text-base">
             Karatoprak Area, Markovo Village,
             Rodopi Municipality, Plovdiv Region, Bulgaria.
           </p>

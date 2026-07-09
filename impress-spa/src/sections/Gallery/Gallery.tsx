@@ -11,21 +11,21 @@ function Gallery() {
     <Section id="gallery">
       <Container>
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">
+          <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
             Gallery
           </p>
 
-          <h2 className="mt-4 text-4xl font-bold text-slate-900">
+          <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
             Inside Impress
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
+          <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-slate-600 md:text-lg">
             A glimpse into our production capabilities,
             technology and craftsmanship.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:gap-8">
           {images.map((image, index) => (
             <div
               key={index}
@@ -40,12 +40,14 @@ function Gallery() {
                 src={image}
                 alt="Impress production"
                 className="
-                  h-[350px]
-                  w-full
-                  object-cover
-                  transition-transform
-                  duration-500
-                  group-hover:scale-105
+                 h-[260px]
+                w-full
+                object-cover
+                transition-transform
+                duration-500
+                group-hover:scale-105
+                sm:h-[320px]
+                lg:h-[350px]
                 "
               />
             </div>

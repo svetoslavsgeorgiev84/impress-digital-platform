@@ -47,15 +47,15 @@ function Solutions() {
         <Section id="solutions">
             <Container>
                 <div className="text-center">
-                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">
+                    <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
                         Products & Solutions
                     </p>
 
-                    <h2 className="mt-4 text-4xl font-bold text-slate-900">
-                        What We Create
+                    <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
+                        What We Deliver
                     </h2>
 
-                    <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
+                    <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-slate-600 md:text-lg">
                         Premium packaging and display solutions designed
                         to help brands stand out.
                     </p>
@@ -66,11 +66,17 @@ function Solutions() {
                         <div
                             key={item.title}
                             className="
-                rounded-2xl
+               rounded-2xl
                 border
                 border-slate-200
                 bg-white
                 p-8
+                min-h-[280px]
+                shadow-sm
+                transition-all
+                duration-300
+                hover:-translate-y-2
+                hover:shadow-xl
                 shadow-sm
                 transition-all
                 duration-300
@@ -78,15 +84,15 @@ function Solutions() {
                 hover:shadow-xl
               "
                         >
-                            <div className="text-5xl">
+                            <div className="text-6xl text-blue-700">
                                 {item.icon}
                             </div>
 
-                            <h3 className="mt-6 text-2xl font-bold text-slate-900">
+                            <h3 className="mt-6 text-3xl font-bold text-slate-900 md:text-2xl">
                                 {item.title}
                             </h3>
 
-                            <p className="mt-4 text-slate-600">
+                            <p className="mt-4 text-lg leading-8 text-slate-600 md:text-base">
                                 {item.text}
                             </p>
                         </div>
