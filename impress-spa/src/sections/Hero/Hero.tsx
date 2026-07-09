@@ -32,7 +32,7 @@ function Hero() {
                             Premium packaging and display solutions manufactured in Bulgaria and delivered across Europe.
                         </p>
 
-                        <div className="mt-10 flex flex-wrap gap-4">
+                        {/* <div className="mt-10 flex flex-wrap gap-4">
                             <Button>
                                 Request a Quote
                             </Button>
@@ -56,7 +56,7 @@ function Hero() {
                             >
                                 View Portfolio
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </Container>
             </div>
