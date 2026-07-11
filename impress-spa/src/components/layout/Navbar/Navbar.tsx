@@ -128,57 +128,100 @@ function Navbar() {
           {/* Mobile button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden"
+            className="
+            lg:hidden
+            cursor-pointer
+            transition-transform
+            duration-300
+            hover:scale-110
+            "
             aria-label="Toggle menu"
           >
-            {isOpen ? (
-              <X size={30} />
-            ) : (
-              <Menu size={30} />
-            )}
+            <div
+              className="
+              transition-transform
+              duration-300
+              "
+            >
+              {isOpen ? (
+                <X size={30} />
+              ) : (
+                <Menu size={30} />
+              )}
+            </div>
           </button>
         </div>
       </Container>
 
       {/* Mobile navigation */}
-      {isOpen && (
-        <div
-          className="
-            border-t
-            border-slate-200
-            bg-white
-            shadow-xl
-            lg:hidden
-          "
-        >
-          <Container>
-            <nav className="flex flex-col py-4">
-              {links.map((link) => (
-                <a
-                  key={link.id}
-                  href={`#${link.id}`}
-                  onClick={() => setIsOpen(false)}
-                  className={`
-                    py-4
-                    text-lg
-                    transition-colors
-                    ${activeSection === link.id
-                      ? "font-semibold text-blue-700"
-                      : "text-slate-700"
-                    }
-                  `}
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
+      <div
+        className={`
+    overflow-hidden
+    border-t
+    border-slate-200
+    bg-white
+    shadow-xl
+    lg:hidden
+    transition-all
+    duration-500
+    ease-out
+    ${isOpen
+            ? "max-h-[500px] opacity-100"
+            : "max-h-0 opacity-0"
+          }
+  `}
+      >
+        <Container>
+          <nav
+            className={`
+        flex
+        flex-col
+        py-4
+        transition-all
+        duration-500
+        ease-out
+        ${isOpen
+                ? "translate-y-0"
+                : "-translate-y-4"
+              }
+      `}
+          >
+            {links.map((link) => (
+              <a
+                key={link.id}
+                href={`#${link.id}`}
+                onClick={() => setIsOpen(false)}
+                className={`
+            py-4
+            text-lg
+            transition-colors
+            ${activeSection === link.id
+                    ? "font-semibold text-blue-700"
+                    : "text-slate-700 hover:text-blue-700"
+                  }
+          `}
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
 
-            <div className="pb-4">
-              <LanguageSwitcher />
-            </div>
-          </Container>
-        </div>
-      )}
+          <div
+            className={`
+        pb-4
+        transition-all
+        duration-500
+        ease-out
+        ${isOpen
+                ? "translate-y-0 opacity-100"
+                : "-translate-y-4 opacity-0"
+              }
+      `}
+          >
+            <LanguageSwitcher />
+          </div>
+        </Container>
+      </div>
     </header>
   );
 }
