@@ -2,8 +2,8 @@ import Container from "../../components/ui/Container/Container";
 import Section from "../../components/ui/Section/Section";
 import { useTranslation } from "react-i18next";
 
-import image1 from "../../assets/gallery/production-hall-1.jpg";
-import image2 from "../../assets/gallery/production-hall-2.jpg";
+import image1 from "../../assets/gallery/production-hall-1.webp";
+import image2 from "../../assets/gallery/production-hall-2.webp";
 
 function Gallery() {
   const images = [image1, image2];
@@ -40,6 +40,7 @@ function Gallery() {
               <img
                 src={image}
                 alt="Impress production"
+                loading="lazy"
                 className="
                  h-[260px]
                 w-full

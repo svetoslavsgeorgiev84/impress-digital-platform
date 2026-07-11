@@ -13,6 +13,7 @@ function Footer() {
             src={logo}
             alt="Impress"
             className="h-12 w-auto md:h-10"
+            loading="lazy"
           />
 
           <p className="text-center text-base text-slate-500 md:text-sm">

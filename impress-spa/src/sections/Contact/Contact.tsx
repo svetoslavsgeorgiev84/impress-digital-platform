@@ -1,6 +1,6 @@
 import Container from "../../components/ui/Container/Container";
 import Section from "../../components/ui/Section/Section";
-import officeImage from "../../assets/contact/office.jpg";
+import officeImage from "../../assets/contact/office.webp";
 import { useTranslation } from "react-i18next";
 
 function Contact() {
@@ -30,6 +30,7 @@ function Contact() {
             <img
               src={officeImage}
               alt="Impress office"
+              loading="lazy"
               className="
                h-[280px]
               w-full

@@ -1,6 +1,6 @@
 import Container from "../../components/ui/Container/Container";
 import Section from "../../components/ui/Section/Section";
-import productionImage from "../../assets/images/production.jpg";
+import productionImage from "../../assets/images/production.webp";
 import { useTranslation } from "react-i18next";
 
 function Capabilities() {
@@ -22,6 +22,7 @@ function Capabilities() {
                         <img
                             src={productionImage}
                             alt="Impress production"
+                            loading="lazy"
                             className="
                             h-[280px]
                             w-full

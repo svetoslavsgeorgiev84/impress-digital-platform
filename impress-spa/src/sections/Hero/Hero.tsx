@@ -1,5 +1,5 @@
 import Container from "../../components/ui/Container/Container";
-import heroImage from "../../assets/images/hero.jpg";
+import heroImage from "../../assets/images/hero.webp";
 import { useTranslation } from "react-i18next";
 
 function Hero() {
