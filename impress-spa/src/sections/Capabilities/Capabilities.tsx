@@ -17,23 +17,7 @@ function Capabilities() {
     return (
         <Section id="production">
             <Container>
-                <div className="grid gap-20 lg:grid-cols-[1.2fr_1fr] lg:items-center">
-                    <div>
-                        <img
-                            src={productionImage}
-                            alt="Impress production"
-                            loading="lazy"
-                            className="
-                            h-[280px]
-                            w-full
-                            rounded-3xl
-                            object-cover
-                            shadow-2xl
-                            sm:h-[350px]
-                            lg:h-[450px]
-                        "
-                        />
-                    </div>
+                <div className="mx-auto max-w-4xl">
 
                     <div>
                         <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
@@ -59,11 +43,12 @@ function Capabilities() {
                                     rounded-xl
                                     border
                                     border-slate-200
-                                    p-5
+                                    p-6
+                                    text-lg
                                     transition-all
                                     duration-300
                                     hover:border-blue-200
-                                    hover:translate-x-2
+                                    hover:translate-x-1
                                     hover:shadow-md
                                     "
                                 >
