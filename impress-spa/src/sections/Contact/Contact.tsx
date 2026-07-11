@@ -51,12 +51,13 @@ function Contact() {
             <div className="mt-8 space-y-6 text-lg text-slate-600 md:text-base">
               <div>
                 <p className="text-lg font-semibold text-slate-900 md:text-base">
-                  {t("contact.address")}
+                  {t("contact.addressTitle")}
                 </p>
 
                 <p className="mt-2">
-                  3A Nikola Vaptsarov Blvd.<br />
-                  4004 Plovdiv, Bulgaria
+                  {/* 3A Nikola Vaptsarov Blvd.<br />
+                  4004 Plovdiv, Bulgaria */}
+                       {t("contact.address")}
                 </p>
               </div>
 
