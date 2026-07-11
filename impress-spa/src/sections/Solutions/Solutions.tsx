@@ -1,45 +1,43 @@
 import Container from "../../components/ui/Container/Container";
 import Section from "../../components/ui/Section/Section";
-import {
-    Package,
-    Store,
-    Presentation,
-    Printer,
-    ShoppingCart,
-    Cog,
-} from "lucide-react";
 import { useTranslation } from "react-i18next";
+import luxuryBox from "../../assets/solutions/luxury-box.webp";
+import displayStand from "../../assets/solutions/display-stand.webp";
+import posDisplay from "../../assets/solutions/pos-display.webp";
+import largeFormat from "../../assets/solutions/large-format.webp";
+import retailSolutions from "../../assets/solutions/retail-solutions.webp";
+import customProject from "../../assets/solutions/custom-project.webp";
 
 function Solutions() {
     const { t } = useTranslation();
     const solutions = [
         {
-            icon: <Package />,
+            image: luxuryBox,
             title: t("solutions.item1Title"),
             text: t("solutions.item1Text"),
         },
         {
-            icon: <Presentation />,
+            image: displayStand,
             title: t("solutions.item2Title"),
             text: t("solutions.item2Text"),
         },
         {
-            icon: <Store />,
+            image: posDisplay,
             title: t("solutions.item3Title"),
             text: t("solutions.item3Text"),
         },
         {
-            icon: <Printer />,
+            image: largeFormat,
             title: t("solutions.item4Title"),
             text: t("solutions.item4Text"),
         },
         {
-            icon: <ShoppingCart />,
+            image: retailSolutions,
             title: t("solutions.item5Title"),
             text: t("solutions.item5Text"),
         },
         {
-            icon: <Cog />,
+            image: customProject,
             title: t("solutions.item6Title"),
             text: t("solutions.item6Text"),
         },
@@ -67,26 +65,39 @@ function Solutions() {
                         <div
                             key={item.title}
                             className="
-               rounded-2xl
-                border
-                border-slate-200
-                bg-white
-                p-8
-                min-h-[280px]
-                shadow-sm
-                transition-all
-                duration-300
-                hover:-translate-y-2
-                hover:shadow-xl
-                shadow-sm
-                transition-all
-                duration-300
-                hover:-translate-y-2
-                hover:shadow-xl
+                            group
+                            rounded-2xl
+                            border
+                            border-slate-200
+                            bg-white
+                            p-8
+                            min-h-[410px]
+                            transition-all
+                            duration-300
+                            hover:-translate-y-2
+                            shadow-sm
+                            transition-all
+                            duration-300
+                            hover:-translate-y-2
+                            hover:shadow-2xl
+                            hover:border-blue-300
               "
                         >
                             <div className="text-6xl text-blue-700">
-                                {item.icon}
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="
+                                    mb-6
+                                    h-56
+                                    w-full
+                                    rounded-xl
+                                    object-cover
+                                    transition-transform
+                                    duration-500
+                                    group-hover:scale-105
+                                    "
+                                />
                             </div>
 
                             <h3 className="mt-6 text-3xl font-bold text-slate-900 md:text-2xl">
