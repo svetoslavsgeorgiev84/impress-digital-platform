@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Container from "../../components/ui/Container/Container";
 import Section from "../../components/ui/Section/Section";
 import { useTranslation } from "react-i18next";
-import luxuryBox from "../../assets/solutions/luxury-box.webp";
+import luxuryBox1 from "../../assets/solutions/luxury-box.webp";
+import luxuryBox2 from "../../assets/solutions/luxury-box2.webp";
+import luxuryBox3 from "../../assets/solutions/luxury-box3.webp";
 import displayStand from "../../assets/solutions/display-stand.webp";
 import posDisplay from "../../assets/solutions/pos-display.webp";
 import largeFormat from "../../assets/solutions/large-format.webp";
@@ -12,36 +15,41 @@ function Solutions() {
     const { t } = useTranslation();
     const solutions = [
         {
-            image: luxuryBox,
+            images: [
+                luxuryBox1,
+                luxuryBox2,
+                luxuryBox3,
+            ],
             title: t("solutions.item1Title"),
             text: t("solutions.item1Text"),
         },
         {
-            image: displayStand,
+            images: [displayStand],
             title: t("solutions.item2Title"),
             text: t("solutions.item2Text"),
         },
         {
-            image: posDisplay,
+            images: [posDisplay],
             title: t("solutions.item3Title"),
             text: t("solutions.item3Text"),
         },
         {
-            image: largeFormat,
+            images: [largeFormat],
             title: t("solutions.item4Title"),
             text: t("solutions.item4Text"),
         },
         {
-            image: retailSolutions,
+            images: [retailSolutions],
             title: t("solutions.item5Title"),
             text: t("solutions.item5Text"),
         },
         {
-            image: customProject,
+            images: [customProject],
             title: t("solutions.item6Title"),
             text: t("solutions.item6Text"),
         },
     ];
+    const [premiumImageIndex, setPremiumImageIndex] = useState(0);
 
     return (
         <Section id="solutions">
@@ -61,7 +69,7 @@ function Solutions() {
                 </div>
 
                 <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-                    {solutions.map((item) => (
+                    {solutions.map((item, index) => (
                         <div
                             key={item.title}
                             className="
@@ -85,19 +93,54 @@ function Solutions() {
                         >
                             <div className="text-6xl text-blue-700">
                                 <img
-                                    src={item.image}
+                                    src={
+                                        index === 0
+                                            ? item.images[premiumImageIndex]
+                                            : item.images[0]
+                                    }
                                     alt={item.title}
+                                    onClick={() => {
+                                        if (index !== 0) return;
+
+                                        setPremiumImageIndex((prev) =>
+                                            (prev + 1) % item.images.length
+                                        );
+                                    }}
                                     className="
                                     mb-6
                                     h-56
                                     w-full
                                     rounded-xl
                                     object-cover
-                                    transition-transform
-                                    duration-500
-                                    group-hover:scale-105
-                                    "
+                                    cursor-pointer
+                                    transition-all
+                                    duration-300
+                                "
                                 />
+                                {index === 0 && (
+                                    <div className="mb-6 flex justify-center gap-2">
+                                        {item.images.map((_, imageIndex) => (
+                                            <button
+                                                key={imageIndex}
+                                                type="button"
+                                                onClick={() =>
+                                                    setPremiumImageIndex(imageIndex)
+                                                }
+                                                className={`
+                                                        h-2.5
+                                                        w-2.5
+                                                        rounded-full
+                                                        transition-all
+                                                        duration-300
+                                                        ${premiumImageIndex === imageIndex
+                                                        ? "bg-blue-700"
+                                                        : "bg-slate-300 hover:bg-slate-400"
+                                                    }
+                                                `}
+                                            />
+                                        ))}
+                                    </div>
+                                )}
                             </div>
 
                             <h3 className="mt-6 text-3xl font-bold text-slate-900 md:text-2xl">
