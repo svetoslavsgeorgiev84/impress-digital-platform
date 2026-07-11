@@ -129,11 +129,13 @@ function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="
+            mr-2
+            rounded-lg
+            p-2
             lg:hidden
-            cursor-pointer
-            transition-transform
+            transition-all
             duration-300
-            hover:scale-110
+            hover:bg-slate-100
             "
             aria-label="Toggle menu"
           >
