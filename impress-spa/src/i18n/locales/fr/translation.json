@@ -1,0 +1,80 @@
+{
+  "navbar": {
+    "company": "Entreprise",
+    "solutions": "Solutions",
+    "production": "Production",
+    "gallery": "Galerie",
+    "contact": "Contact"
+  },
+  "hero": {
+    "impress": "Impress SARL",
+    "title": "Solutions Complètes d'Emballage",
+    "subtitle": "Solutions premium d'emballage et de présentoirs fabriquées en Bulgarie et livrées dans toute l'Europe."
+  },
+  "whyImpress": {
+    "label": "Pourquoi Impress",
+    "title": "Partenaire de confiance en emballage",
+    "subtitle": "Solutions complètes d'emballage, de la conception et de l'ingénierie à la production et à la livraison.",
+    "title1": "30+",
+    "title2": "De bout en bout",
+    "title3": "Européens",
+    "title4": "Sur mesure",
+    "item1": "Années d'expérience",
+    "item2": "Capacités de production",
+    "item3": "Clients et partenaires",
+    "item4": "Ingénierie de l'emballage"
+  },
+  "solutions": {
+    "label": "Produits et Solutions",
+    "title": "Ce que nous proposons",
+    "subtitle": "Des solutions premium d'emballage et de présentation conçues pour aider les marques à se démarquer.",
+    "item1Title": "Emballages Premium",
+    "item1Text": "Solutions d'emballage de luxe, de vente au détail et sur mesure.",
+    "item2Title": "Présentoirs et Supports",
+    "item2Text": "Présentoirs de vente et systèmes de présentation promotionnelle.",
+    "item3Title": "Matériaux PLV",
+    "item3Text": "Matériaux de point de vente qui renforcent la visibilité de la marque.",
+    "item4Title": "Graphiques Grand Format",
+    "item4Text": "Solutions de communication grand format pour l'intérieur et l'extérieur.",
+    "item5Title": "Solutions Retail",
+    "item5Text": "Solutions intégrées pour les environnements de vente modernes.",
+    "item6Title": "Projets Sur Mesure",
+    "item6Text": "Ingénierie et fabrication adaptées à vos besoins."
+  },
+  "capabilities": {
+    "label": "Capacités de Production",
+    "title": "Capacités de Production Complètes",
+    "subtitle": "De la conception et du prépresse à la finition haut de gamme et à la livraison, Impress fournit des solutions complètes d'emballage et de présentation.",
+    "item1": "Services de Prépresse",
+    "item2": "Impression Numérique et Offset",
+    "item3": "Impression sur Matériaux Rigides",
+    "item4": "Impression Grand Format sur Bobine",
+    "item5": "Opérations de Finition",
+    "item6": "Solutions d'Emballage Sur Mesure"
+  },
+  "gallery": {
+    "label": "Galerie",
+    "title": "Au cœur d'Impress",
+    "subtitle": "Un aperçu de nos capacités de production, de notre technologie et de notre savoir-faire."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Contactez-nous",
+    "subtitle": "Nous serions heureux de discuter de votre prochain projet d'emballage et de présentation.",
+    "officeTitle": "Siège Central",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "mapsButton": "Ouvrir dans Google Maps",
+    "facilityTitle": "Site de Production",
+    "facilityAddress": "Zone Karatoprak, village de Markovo, municipalité de Rodopi, région de Plovdiv, Bulgarie."
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "impress": "Impress SARL."
+  },
+  "seo": {
+    "title": "Impress Ltd. | Solutions Complètes d'Emballage",
+    "description": "Solutions premium d'emballage et de présentation fabriquées en Bulgarie et livrées dans toute l'Europe."
+  }
+}

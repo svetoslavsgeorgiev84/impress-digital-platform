@@ -1,26 +1,27 @@
 import Container from "../../components/ui/Container/Container";
 import Section from "../../components/ui/Section/Section";
 import officeImage from "../../assets/contact/office.jpg";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
   const officeMaps =
     "https://maps.app.goo.gl/478yMuUuHHHzQdvKA";
+  const { t } = useTranslation();
 
   return (
     <Section id="contact">
       <Container>
         <div className="text-center">
           <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
-            Contact
+            {t("contact.label")}
           </p>
 
           <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
-            Get in Touch
+            {t("contact.title")}
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-slate-600 md:text-lg">
-            We would be happy to discuss your next packaging
-            and display project.
+            {t("contact.subtitle")}
           </p>
         </div>
 
@@ -43,13 +44,13 @@ function Contact() {
 
           <div className="rounded-3xl bg-slate-50 p-8 md:p-10">
             <h3 className="text-3xl font-bold text-slate-900 md:text-2xl">
-              Central Office
+              {t("contact.officeTitle")}
             </h3>
 
             <div className="mt-8 space-y-6 text-lg text-slate-600 md:text-base">
               <div>
                 <p className="text-lg font-semibold text-slate-900 md:text-base">
-                  Address
+                  {t("contact.address")}
                 </p>
 
                 <p className="mt-2">
@@ -60,7 +61,7 @@ function Contact() {
 
               <div>
                 <p className="font-semibold text-slate-900">
-                  Phone
+                  {t("contact.phone")}
                 </p>
 
                 <p className="mt-2">
@@ -70,7 +71,7 @@ function Contact() {
 
               <div>
                 <p className="font-semibold text-slate-900">
-                  Email
+                  {t("contact.email")}
                 </p>
 
                 <p className="mt-2">
@@ -100,7 +101,7 @@ function Contact() {
                 hover:bg-blue-800
               "
             >
-              Open in Google Maps
+              {t("contact.mapsButton")}
             </a>
           </div>
         </div>
@@ -115,12 +116,11 @@ function Contact() {
           "
         >
           <h3 className="text-3xl font-bold text-slate-900 md:text-2xl">
-            Production Facility
+            {t("contact.facilityTitle")}
           </h3>
 
           <p className="mt-4 text-lg leading-8 text-slate-600 md:text-base">
-            Karatoprak Area, Markovo Village,
-            Rodopi Municipality, Plovdiv Region, Bulgaria.
+            {t("contact.facilityAddress")}
           </p>
         </div>
       </Container>

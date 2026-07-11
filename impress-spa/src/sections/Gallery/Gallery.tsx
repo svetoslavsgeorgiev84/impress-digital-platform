@@ -1,27 +1,28 @@
 import Container from "../../components/ui/Container/Container";
 import Section from "../../components/ui/Section/Section";
+import { useTranslation } from "react-i18next";
 
 import image1 from "../../assets/gallery/production-hall-1.jpg";
 import image2 from "../../assets/gallery/production-hall-2.jpg";
 
 function Gallery() {
   const images = [image1, image2];
+  const { t } = useTranslation();
 
   return (
     <Section id="gallery">
       <Container>
         <div className="text-center">
           <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
-            Gallery
+            {t("gallery.label")}
           </p>
 
           <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
-            Inside Impress
+            {t("gallery.title")}
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-slate-600 md:text-lg">
-            A glimpse into our production capabilities,
-            technology and craftsmanship.
+            {t("gallery.subtitle")}
           </p>
         </div>
 

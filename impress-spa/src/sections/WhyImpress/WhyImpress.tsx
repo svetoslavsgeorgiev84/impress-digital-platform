@@ -1,23 +1,25 @@
 import Container from "../../components/ui/Container/Container";
 import Section from "../../components/ui/Section/Section";
+import { useTranslation } from "react-i18next";
 
 function WhyImpress() {
+    const { t } = useTranslation();
     const items = [
         {
-            title: "30+",
-            text: "Years of Experience",
+            title: t("whyImpress.title1"),
+            text: t("whyImpress.item1"),
         },
         {
-            title: "End-to-End",
-            text: "Production Capabilities",
+            title: t("whyImpress.title2"),
+            text: t("whyImpress.item2"),
         },
         {
-            title: "European",
-            text: "Clients & Partners",
+            title: t("whyImpress.title3"),
+            text: t("whyImpress.item3"),
         },
         {
-            title: "Custom",
-            text: "Packaging Engineering",
+            title: t("whyImpress.title4"),
+            text: t("whyImpress.item4"),
         },
     ];
 
@@ -26,16 +28,15 @@ function WhyImpress() {
             <Container>
                 <div className="text-center">
                     <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
-                        Why Impress
+                        {t("whyImpress.label")}
                     </p>
 
                     <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
-                        Trusted Packaging Partner
+                        {t("whyImpress.title")}
                     </h2>
 
                     <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-slate-600 md:text-lg">
-                        Complete packaging solutions, from concept and engineering
-                        to production and delivery.
+                        {t("whyImpress.subtitle")}
                     </p>
                 </div>
 

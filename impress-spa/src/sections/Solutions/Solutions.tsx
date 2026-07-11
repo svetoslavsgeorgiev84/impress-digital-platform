@@ -8,38 +8,40 @@ import {
     ShoppingCart,
     Cog,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 function Solutions() {
+    const { t } = useTranslation();
     const solutions = [
         {
             icon: <Package />,
-            title: "Premium Packaging",
-            text: "Luxury, retail and custom packaging solutions.",
+            title: t("solutions.item1Title"),
+            text: t("solutions.item1Text"),
         },
         {
             icon: <Presentation />,
-            title: "Displays & Stands",
-            text: "Retail displays and promotional presentation systems.",
+            title: t("solutions.item2Title"),
+            text: t("solutions.item2Text"),
         },
         {
             icon: <Store />,
-            title: "POS Materials",
-            text: "Point-of-sale materials that enhance brand visibility.",
+            title: t("solutions.item3Title"),
+            text: t("solutions.item3Text"),
         },
         {
             icon: <Printer />,
-            title: "Large Format Graphics",
-            text: "Indoor and outdoor large format communication solutions.",
+            title: t("solutions.item4Title"),
+            text: t("solutions.item4Text"),
         },
         {
             icon: <ShoppingCart />,
-            title: "Retail Solutions",
-            text: "Integrated solutions for modern retail environments.",
+            title: t("solutions.item5Title"),
+            text: t("solutions.item5Text"),
         },
         {
             icon: <Cog />,
-            title: "Custom Projects",
-            text: "Engineering and manufacturing tailored to your requirements.",
+            title: t("solutions.item6Title"),
+            text: t("solutions.item6Text"),
         },
     ];
 
@@ -48,16 +50,15 @@ function Solutions() {
             <Container>
                 <div className="text-center">
                     <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
-                        Products & Solutions
+                        {t("solutions.label")}
                     </p>
 
                     <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
-                        What We Deliver
+                        {t("solutions.title")}
                     </h2>
 
                     <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-slate-600 md:text-lg">
-                        Premium packaging and display solutions designed
-                        to help brands stand out.
+                        {t("solutions.subtitle")}
                     </p>
                 </div>
 

@@ -4,6 +4,8 @@ import { Menu, X } from "lucide-react";
 import Container from "../../ui/Container/Container";
 import logo from "../../../assets/logos/impress-logo.png";
 import { useActiveSection } from "../../../hooks/useActiveSection";
+import LanguageSwitcher from "../../LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const activeSection = useActiveSection();
@@ -37,26 +39,27 @@ function Navbar() {
     };
   }, [isOpen]);
 
+  const { t } = useTranslation();
   const links = [
     {
       id: "company",
-      label: "Company",
+      label: t("navbar.company"),
     },
     {
       id: "solutions",
-      label: "Solutions",
+      label: t("navbar.solutions"),
     },
     {
       id: "production",
-      label: "Production",
+      label: t("navbar.production"),
     },
     {
       id: "gallery",
-      label: "Gallery",
+      label: t("navbar.gallery"),
     },
     {
       id: "contact",
-      label: "Contact",
+      label: t("navbar.contact"),
     },
   ];
 
@@ -118,6 +121,8 @@ function Navbar() {
                 )}
               </a>
             ))}
+
+            <LanguageSwitcher />
           </nav>
 
           {/* Mobile button */}
@@ -167,6 +172,10 @@ function Navbar() {
                 </a>
               ))}
             </nav>
+
+            <div className="pb-4">
+              <LanguageSwitcher />
+            </div>
           </Container>
         </div>
       )}

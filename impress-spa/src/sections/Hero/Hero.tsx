@@ -1,7 +1,10 @@
 import Container from "../../components/ui/Container/Container";
 import heroImage from "../../assets/images/hero.jpg";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+    const { t } = useTranslation();
+
     return (
         <section
             id="company"
@@ -20,15 +23,15 @@ function Hero() {
                 <Container>
                     <div className="max-w-3xl text-white lg:ml-12">
                         <p className="mb-4 text-base uppercase tracking-[0.25em] text-blue-300 md:text-sm">
-                            Impress Ltd.
+                            {t("hero.impress")}
                         </p>
 
                         <h1 className="text-[42px] font-bold leading-tight sm:text-5xl lg:text-6xl">
-                            Complete Packaging Solutions
+                            {t("hero.title")}
                         </h1>
 
                         <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
-                            Premium packaging and display solutions manufactured in Bulgaria and delivered across Europe.
+                            {t("hero.subtitle")}
                         </p>
 
                     </div>

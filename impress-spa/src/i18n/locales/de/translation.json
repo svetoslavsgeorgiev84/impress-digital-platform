@@ -1,0 +1,80 @@
+{
+    "navbar": {
+        "company": "Unternehmen",
+        "solutions": "Lösungen",
+        "production": "Produktion",
+        "gallery": "Galerie",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "impress": "Impress GmbH",
+        "title": "Komplette Verpackungslösungen",
+        "subtitle": "Hochwertige Verpackungs- und Displaylösungen, hergestellt in Bulgarien und in ganz Europa geliefert."
+    },
+    "whyImpress": {
+        "label": "Warum Impress",
+        "title": "Vertrauenswürdiger Verpackungspartner",
+        "subtitle": "Komplette Verpackungslösungen – von der Konzeption und Entwicklung bis zur Produktion und Lieferung.",
+        "title1": "30+",
+        "title2": "Komplett",
+        "title3": "Europäische",
+        "title4": "Individuelle",
+        "item1": "Jahre Erfahrung",
+        "item2": "Produktionskapazitäten",
+        "item3": "Kunden und Partner",
+        "item4": "Verpackungsentwicklung"
+    },
+    "solutions": {
+        "label": "Produkte & Lösungen",
+        "title": "Was wir liefern",
+        "subtitle": "Hochwertige Verpackungs- und Displaylösungen, die Marken dabei helfen, sich hervorzuheben.",
+        "item1Title": "Premium-Verpackungen",
+        "item1Text": "Luxuriöse, handelsübliche und individuelle Verpackungslösungen.",
+        "item2Title": "Displays & Aufsteller",
+        "item2Text": "Verkaufsdisplays und Präsentationssysteme für Werbezwecke.",
+        "item3Title": "POS-Materialien",
+        "item3Text": "Point-of-Sale-Materialien zur Steigerung der Markenpräsenz.",
+        "item4Title": "Großformatgrafiken",
+        "item4Text": "Kommunikationslösungen im Großformat für Innen- und Außenbereiche.",
+        "item5Title": "Retail-Lösungen",
+        "item5Text": "Integrierte Lösungen für moderne Einzelhandelsumgebungen.",
+        "item6Title": "Individuelle Projekte",
+        "item6Text": "Engineering und Fertigung nach Ihren Anforderungen."
+    },
+    "capabilities": {
+        "label": "Produktionskapazitäten",
+        "title": "Umfassende Produktionskapazitäten",
+        "subtitle": "Von der Konzeption und Druckvorstufe bis zur hochwertigen Weiterverarbeitung und Lieferung bietet Impress komplette Verpackungs- und Displaylösungen.",
+        "item1": "Druckvorstufen-Service",
+        "item2": "Digital- und Offsetdruck",
+        "item3": "Druck auf starren Materialien",
+        "item4": "Großformatiger Rollendruck",
+        "item5": "Weiterverarbeitung",
+        "item6": "Individuelle Verpackungslösungen"
+    },
+    "gallery": {
+        "label": "Galerie",
+        "title": "Ein Blick hinter die Kulissen von Impress",
+        "subtitle": "Ein Einblick in unsere Produktionskapazitäten, Technologien und Handwerkskunst."
+    },
+    "contact": {
+        "label": "Kontakt",
+        "title": "Kontaktieren Sie uns",
+        "subtitle": "Gerne besprechen wir Ihr nächstes Verpackungs- und Displayprojekt.",
+        "officeTitle": "Hauptsitz",
+        "address": "Adresse",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "mapsButton": "In Google Maps öffnen",
+        "facilityTitle": "Produktionsstandort",
+        "facilityAddress": "Gebiet Karatoprak, Dorf Markovo, Gemeinde Rodopi, Region Plovdiv, Bulgarien."
+    },
+    "footer": {
+        "rights": "Alle Rechte vorbehalten.",
+        "impress": "Impress GmbH."
+    },
+    "seo": {
+        "title": "Impress Ltd. | Komplette Verpackungslösungen",
+        "description": "Hochwertige Verpackungs- und Displaylösungen, hergestellt in Bulgarien und in ganz Europa geliefert."
+    }
+}

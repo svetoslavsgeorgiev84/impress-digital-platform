@@ -8,10 +8,12 @@ import BackToTop from "./components/ui/BackToTop/BackToTop";
 import Gallery from "./sections/Gallery/Gallery";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./components/layout/Footer/Footer";
+import SEO from "./components/SEO/SEO";
 
 function App() {
   return (
     <MainLayout>
+      <SEO />
       <Navbar />
       <Hero />
       <WhyImpress />

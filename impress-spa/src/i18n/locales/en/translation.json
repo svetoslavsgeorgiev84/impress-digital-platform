@@ -1,0 +1,80 @@
+{
+    "navbar": {
+        "company": "Company",
+        "solutions": "Solutions",
+        "production": "Production",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    },
+    "hero": {
+        "impress": "Impress Ltd.",
+        "title": "Complete Packaging Solutions",
+        "subtitle": "Premium packaging and display solutions manufactured in Bulgaria and delivered across Europe."
+    },
+    "whyImpress": {
+        "label": "Why Impress",
+        "title": "Trusted Packaging Partner",
+        "subtitle": "Complete packaging solutions, from concept and engineering to production and delivery.",
+        "title1": "30+",
+        "title2": "End-to-End",
+        "title3": "European",
+        "title4": "Custom",
+        "item1": "Years of Experience",
+        "item2": "Production Capabilities",
+        "item3": "Clients & Partners",
+        "item4": "Packaging Engineering"
+    },
+    "solutions": {
+        "label": "Products & Solutions",
+        "title": "What We Deliver",
+        "subtitle": "Premium packaging and display solutions designed to help brands stand out.",
+        "item1Title": "Premium Packaging",
+        "item1Text": "Luxury, retail and custom packaging solutions.",
+        "item2Title": "Displays & Stands",
+        "item2Text": "Retail displays and promotional presentation systems.",
+        "item3Title": "POS Materials",
+        "item3Text": "Point-of-sale materials that enhance brand visibility.",
+        "item4Title": "Large Format Graphics",
+        "item4Text": "Indoor and outdoor large format communication solutions.",
+        "item5Title": "Retail Solutions",
+        "item5Text": "Integrated solutions for modern retail environments.",
+        "item6Title": "Custom Projects",
+        "item6Text": "Engineering and manufacturing tailored to your requirements."
+    },
+    "capabilities": {
+        "label": "Production Capabilities",
+        "title": "Comprehensive Production Capabilities",
+        "subtitle": "From concept and prepress to premium finishing and delivery, Impress provides complete packaging and display solutions.",
+        "item1": "Prepress Services",
+        "item2": "Digital & Offset Printing",
+        "item3": "Printing on Rigid Materials",
+        "item4": "Large Format Roll Printing",
+        "item5": "Finishing Operations",
+        "item6": "Custom Packaging Solutions"
+    },
+    "gallery": {
+        "label": "Gallery",
+        "title": "Inside Impress",
+        "subtitle": "A glimpse into our production capabilities, technology and craftsmanship."
+    },
+    "contact": {
+        "label": "Contact",
+        "title": "Get in Touch",
+        "subtitle": "We would be happy to discuss your next packaging and display project.",
+        "officeTitle": "Central Office",
+        "address": "Address",
+        "phone": "Phone",
+        "email": "Email",
+        "mapsButton": "Open in Google Maps",
+        "facilityTitle": "Production Facility",
+        "facilityAddress": "Karatoprak Area, Markovo Village, Rodopi Municipality, Plovdiv Region, Bulgaria."
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "impress": "Impress Ltd."
+    },
+    "seo": {
+        "title": "Impress Ltd. | Complete Packaging Solutions",
+        "description": "Premium packaging and display solutions manufactured in Bulgaria and delivered across Europe."
+    }
+}

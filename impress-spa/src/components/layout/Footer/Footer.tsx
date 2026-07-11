@@ -1,7 +1,10 @@
 import Container from "../../ui/Container/Container";
 import logo from "../../../assets/logos/impress-logo.png";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-slate-200 py-12">
       <Container>
@@ -13,8 +16,7 @@ function Footer() {
           />
 
           <p className="text-center text-base text-slate-500 md:text-sm">
-            © {new Date().getFullYear()} Impress Ltd.
-            All rights reserved.
+            © {new Date().getFullYear()}  {t("footer.impress")} {t("footer.rights")}
           </p>
         </div>
       </Container>
