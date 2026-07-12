@@ -55,8 +55,6 @@ function Contact() {
                 </p>
 
                 <p className="mt-2">
-                  {/* 3A Nikola Vaptsarov Blvd.<br />
-                  4004 Plovdiv, Bulgaria */}
                        {t("contact.address")}
                 </p>
               </div>
@@ -117,7 +115,7 @@ function Contact() {
             p-8
           "
         >
-          <h3 className="text-3xl font-bold text-slate-900 md:text-2xl">
+          <h3 className="text-3xl font-bold text-slate-900 md:text-2xl break-words">
             {t("contact.facilityTitle")}
           </h3>
 

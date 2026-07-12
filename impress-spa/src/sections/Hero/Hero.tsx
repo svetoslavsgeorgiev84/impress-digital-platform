@@ -26,7 +26,7 @@ function Hero() {
                             {t("hero.impress")}
                         </p>
 
-                        <h1 className="text-[42px] font-bold leading-tight sm:text-5xl lg:text-6xl">
+                        <h1 className="text-[42px] font-bold leading-tight sm:text-5xl lg:text-6xl break-words">
                             {t("hero.title")}
                         </h1>
 

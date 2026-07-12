@@ -19,11 +19,11 @@ function Capabilities() {
                 <div className="mx-auto max-w-4xl">
 
                     <div>
-                        <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm">
+                        <p className="text-base font-semibold uppercase tracking-[0.25em] text-blue-700 md:text-sm break-words">
                             {t("capabilities.label")}
                         </p>
 
-                        <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
+                        <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl break-words">
                             {t("capabilities.title")}
                         </h2>
 

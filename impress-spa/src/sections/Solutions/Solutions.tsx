@@ -91,7 +91,7 @@ function Solutions() {
                             border
                             border-slate-200
                             bg-white
-                            p-8
+                            p-5 md:p-8
                             min-h-[410px]
                             transition-all
                             duration-300
@@ -118,14 +118,14 @@ function Solutions() {
                                         });
                                     }}
                                     className={`
-    mb-6
-    h-56
-    w-full
-    rounded-xl
-    object-cover
-    transition-all
-    duration-300
-    ${item.images.length > 1
+                                            mb-6
+                                            h-56
+                                            w-full
+                                            rounded-xl
+                                            object-cover
+                                            transition-all
+                                            duration-300
+                                            ${item.images.length > 1
                                             ? "cursor-pointer"
                                             : ""
                                         }
@@ -151,17 +151,17 @@ function Solutions() {
                                                         );
                                                     }}
                                                     className={`
-            h-2.5
-            w-2.5
-            rounded-full
-            transition-all
-            duration-300
-            ${activeImages[index] ===
+                                                            h-2.5
+                                                            w-2.5
+                                                            rounded-full
+                                                            transition-all
+                                                            duration-300
+                                                            ${activeImages[index] ===
                                                             imageIndex
                                                             ? "bg-blue-700"
                                                             : "bg-slate-300 hover:bg-slate-400"
                                                         }
-          `}
+                                                    `}
                                                 />
                                             )
                                         )}
@@ -169,11 +169,11 @@ function Solutions() {
                                 )}
                             </div>
 
-                            <h3 className="mt-6 text-3xl font-bold text-slate-900 md:text-2xl">
+                            <h3 className="mt-6 text-2xl font-bold text-slate-900 md:text-3xl break-words">
                                 {item.title}
                             </h3>
 
-                            <p className="mt-4 text-lg leading-8 text-slate-600 md:text-base">
+                            <p className="mt-4 text-lg leading-8 text-slate-600 md:text-base break-words">
                                 {item.text}
                             </p>
                         </div>

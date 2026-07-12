@@ -31,7 +31,7 @@ function WhyImpress() {
                         {t("whyImpress.label")}
                     </p>
 
-                    <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
+                    <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl break-words">
                         {t("whyImpress.title")}
                     </h2>
 
@@ -45,32 +45,33 @@ function WhyImpress() {
                         <div
                             key={item.text}
                             className="
-                group
-                group
-                rounded-2xl
-                border
-                border-slate-200
-                bg-white
-                p-8
-                md:p-8
-                shadow-sm
-                transition-all
-                duration-300
-                hover:-translate-y-2
-                hover:border-blue-200
-                hover:shadow-xl
-              "
+                            min-w-0
+                            group
+                            rounded-2xl
+                            border
+                            border-slate-200
+                            bg-white
+                            p-8
+                            md:p-8
+                            shadow-sm
+                            transition-all
+                            duration-300
+                            hover:-translate-y-2
+                            hover:border-blue-200
+                            hover:shadow-xl
+                        "
                         >
                             <h3
                                 className="
-                                    text-4xl
-                    font-bold
-                    text-blue-700
-                    md:text-3xl
-                  transition-colors
-                  duration-300
-                  group-hover:text-sky-500
-                "
+                                    lg:text-4xl
+                                    text-3xl
+                                    font-bold
+                                    text-blue-700
+                                    transition-colors
+                                    duration-300
+                                    group-hover:text-sky-500
+                                    break-words
+                                    "
                             >
                                 {item.title}
                             </h3>
