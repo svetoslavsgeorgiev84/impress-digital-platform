@@ -129,10 +129,9 @@ function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="
-            mr-2
+            lg:hidden
             rounded-lg
             p-2
-            lg:hidden
             transition-all
             duration-300
             hover:bg-slate-100
